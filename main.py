@@ -66,7 +66,7 @@ if __name__ == "__main__":
     epochs = 200
     batch_size = 32
 
-    print("Сбор данных...")
+    print("Collect data...")
     data, labels = collect_data(num_samples)
     input_shape = data.shape[1]
 
