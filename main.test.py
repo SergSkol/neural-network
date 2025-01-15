@@ -25,3 +25,6 @@ if __name__ == "__main__":
     print("Collect data...")
     data, labels = collect_data(num_samples)
     input_shape = data.shape[1]
+
+    print(pd.DataFrame(data))
+    

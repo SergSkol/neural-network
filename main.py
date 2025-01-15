@@ -4,6 +4,7 @@ import tensorflow as tf
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import pandas as pd
+import sys
 
 # Step 1: Collect data to train the neural network
 def collect_data(num_samples):
@@ -62,6 +63,9 @@ def evaluate_model(model, data, labels):
 
 # Основная часть программы
 if __name__ == "__main__":
+    sys.stdin.reconfigure(encoding='utf-8')
+    sys.stdout.reconfigure(encoding='utf-8')
+
     num_samples = 1000
     epochs = 200
     batch_size = 32
@@ -92,3 +96,4 @@ if __name__ == "__main__":
     ax.set_zlabel('Value')
     ax.legend()
     plt.show()
+    
