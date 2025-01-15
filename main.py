@@ -70,16 +70,16 @@ if __name__ == "__main__":
     data, labels = collect_data(num_samples)
     input_shape = data.shape[1]
 
-    print("Создание модели...")
+    print("Create model...")
     model = create_neural_network(input_shape)
 
-    print("Обучение модели...")
+    print("Train model...")
     history = train_neural_network(model, data, labels, epochs, batch_size)
 
-    print("Визуализация результатов...")
+    print("Visualization of results...")
     plot_training_history(history)
 
-    print("Оценка модели...")
+    print("Evaluate model...")
     predictions = evaluate_model(model, data, labels)
 
     # Дополнительная визуализация сравнения прогнозов с реальными значениями
